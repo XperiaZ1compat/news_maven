@@ -27,18 +27,18 @@
 			<div class="logRight">
 				<div class="logRightInner">	
 					<c:if test="${!(empty sessionScope.user) }">
-						<a href="/news/user/manageUIMain/manageMain.jsp">管理</a>&nbsp;
+						<a href="/news/user/manageUIMain/manageMain.jsp">管 理</a>&nbsp;
 					</c:if>
 				
-					<a href="/news/index.jsp">首页</a>&nbsp;
+					<a href="/news/index.jsp">首 页</a>&nbsp;
 					<c:choose>
 						<c:when test="${empty sessionScope.user}">
-							<a href="/news/user/free/login.jsp">登录</a>
-							&nbsp;<a href="/news/user/free/register.jsp">注册</a>
+							<a href="/news/user/free/login.jsp">登 录</a>
+							&nbsp;<a href="/news/user/free/register.jsp">注 *******册</a>
 					    </c:when>
 					    <c:otherwise>
 					    	${sessionScope.user.name}&nbsp;
-					    	<a href="/news/servlet/UserServlet?type1=exit">注销</a>
+					    	<a href="/news/servlet/UserServlet?type1=exit">注 *****销</a>
 					    </c:otherwise>
 					</c:choose>		
 				</div> 	
