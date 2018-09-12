@@ -34,7 +34,7 @@
 					<c:choose>
 						<c:when test="${empty sessionScope.user}">
 							<a href="/news/user/free/login.jsp">登 录</a>
-							&nbsp;<a href="/news/user/free/register.jsp">注 *******册</a>
+							&nbsp;<a href="/news/user/free/register.jsp">注 *********册</a>
 					    </c:when>
 					    <c:otherwise>
 					    	${sessionScope.user.name}&nbsp;
