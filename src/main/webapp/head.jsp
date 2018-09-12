@@ -27,18 +27,35 @@
 			<div class="logRight">
 				<div class="logRightInner">	
 					<c:if test="${!(empty sessionScope.user) }">
+<<<<<<< HEAD
 						<a href="/news/user/manageUIMain/manageMain.jsp">管 理</a>&nbsp;
+=======
+						<a href="/news/user/manageUIMain/manageMain.jsp">管a理</a>&nbsp;
+>>>>>>> branch 'master' of https://github.com/XperiaZ1compat/news_maven.git
 					</c:if>
 				
+<<<<<<< HEAD
 					<a href="/news/index.jsp">首 页</a>&nbsp;
+=======
+					<a href="/news/index.jsp">首a页</a>&nbsp;
+>>>>>>> branch 'master' of https://github.com/XperiaZ1compat/news_maven.git
 					<c:choose>
 						<c:when test="${empty sessionScope.user}">
+<<<<<<< HEAD
 							<a href="/news/user/free/login.jsp">登 录</a>
 							&nbsp;<a href="/news/user/free/register.jsp">注 *********册</a>
+=======
+							<a href="/news/user/free/login.jsp">登a录</a>
+							&nbsp;<a href="/news/user/free/register.jsp">注a册</a>
+>>>>>>> branch 'master' of https://github.com/XperiaZ1compat/news_maven.git
 					    </c:when>
 					    <c:otherwise>
 					    	${sessionScope.user.name}&nbsp;
+<<<<<<< HEAD
 					    	<a href="/news/servlet/UserServlet?type1=exit">注 *****销</a>
+=======
+					    	<a href="/news/servlet/UserServlet?type1=exit">注a销</a>
+>>>>>>> branch 'master' of https://github.com/XperiaZ1compat/news_maven.git
 					    </c:otherwise>
 					</c:choose>		
 				</div> 	
